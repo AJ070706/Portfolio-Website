@@ -1,4 +1,5 @@
 import { personalProjects } from "../data/personalProjects";
+import LiquidLogicProject from "./LiquidLogicProject";
 
 function PersonalProjects() {
   return (
@@ -11,6 +12,7 @@ function PersonalProjects() {
         </div>
       </div>
       <div className="project-grid">
+        <LiquidLogicProject />
         {personalProjects.map(project => (
           <article className="project-card featured-project" key={project.name}>
             <div>
